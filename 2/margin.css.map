@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAWA,AAAA,OAAO,CAAA;EACH,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,IAAI;EANtB,MAAM,EAOU,IAAI,CAAC,IAAI;CAC5B",
+    "sources": [
+        "margin.scss"
+    ],
+    "names": [],
+    "file": "margin.css"
+}

@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  margin: auto;
+}
+
+.container {
+  width: 1024px;
+  height: 768px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 375px;
+    height: 752px;
+  }
+}
+
+.container .sidebar {
+  width: 200px;
+  height: 768px;
+  border: 1px black solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 375px) {
+  .container .sidebar {
+    display: none;
+    position: fixed;
+    z-index: 1300;
+    width: 375px;
+    height: 812px;
+    background: white;
+    padding-left: 150px;
+  }
+}
+
+.container .sidebar .fa-xmark {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  .container .sidebar .fa-xmark {
+    position: fixed;
+    right: 25px;
+    display: block;
+  }
+}
+
+.container .sidebar h1 {
+  margin: auto;
+}
+
+.container .header {
+  width: 824px;
+  height: 90px;
+  border: 1px black solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 375px) {
+  .container .header {
+    width: 375px;
+  }
+}
+
+.container .header .fa-bars {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  .container .header .fa-bars {
+    display: block;
+    position: fixed;
+    right: 25px;
+  }
+}
+
+.container .body {
+  width: 824px;
+  height: 678px;
+  border: 1px black solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 375px) {
+  .container .body {
+    width: 375px;
+    height: 662px;
+  }
+}
+
+.container .footer {
+  width: 1024px;
+  height: 125px;
+  border: 1px black solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 375px) {
+  .container .footer {
+    width: 375px;
+    height: 60px;
+  }
+}
+/*# sourceMappingURL=cut.css.map */

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./cut.css">
+</head>
+
+<body>
+    <section class="container">
+        <div id="sidebar" class="sidebar">
+            <h1>sidebar</h1>
+            <i onclick="closeClick()" class="fa-solid fa-xmark"></i>
+        </div>
+        <div>
+            <div class="header">
+                <h1>header</h1>
+                <i onclick="topClick()" id="top" class="fa-solid fa-bars"></i>
+            </div>
+            <div class="body">
+                <h1>body</h1>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>footer</h1>
+        </div>
+    </section>
+
+    <script>
+        const topClick = () => {
+            document.getElementById('sidebar').style.display = 'block'
+        }
+
+        const closeClick = () => {
+            document.getElementById('sidebar').style.display = 'none'
+        }
+    </script>
+</body>
+
+</html>

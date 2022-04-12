@@ -1,0 +1,35 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .triangle {
+  height: 0px;
+  width: 0px;
+  border-color: transparent transparent orange transparent;
+  border-style: solid solid solid solid;
+  border-width: 50px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform-origin: 50px 75px;
+          transform-origin: 50px 75px;
+}
+
+body .triangle:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  border-color: transparent transparent yellow transparent;
+}
+/*# sourceMappingURL=hover.css.map */

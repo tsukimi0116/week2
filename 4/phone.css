@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.phone {
+  width: 100vw;
+  height: 100vh;
+}
+
+.phone .header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 75px;
+  border: 1px black solid;
+  background-color: white;
+}
+
+.phone .stories {
+  width: 100vw;
+  height: 90px;
+  border: 1px black solid;
+  margin-top: 75px;
+  padding-top: 5px;
+}
+
+.phone .stories p {
+  margin-left: 5px;
+}
+
+.phone .stories .photoArea {
+  margin: auto;
+  width: 90vw;
+  height: 55px;
+  background-color: aqua;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.phone .stories .photoArea .photo {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: yellow;
+}
+
+.phone .post {
+  width: 95vw;
+  height: 300px;
+  border: 1px black solid;
+  border-radius: 15px;
+  margin: 20px auto;
+}
+
+.phone .post:nth-child(1) {
+  background-color: aqua;
+}
+
+.phone .space {
+  height: 70pxfr;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  height: 70px;
+  border: 1px black solid;
+  z-index: 1300;
+  background-color: white;
+}
+/*# sourceMappingURL=phone.css.map */

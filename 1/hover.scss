@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    box-sizing: border-box;
+    .triangle{
+        height: 0px;
+        width: 0px;
+        border-color: transparent transparent orange transparent;
+        border-style: solid solid solid solid ;
+        border-width: 50px;
+        transition: transform 0.5s;
+        transform-origin:50px 75px;
+        &:hover{
+            transform: rotate(180deg);
+            border-color:transparent transparent yellow transparent;
+
+        }
+    }
+}

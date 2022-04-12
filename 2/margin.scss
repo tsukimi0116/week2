@@ -1,0 +1,17 @@
+
+@mixin margin($tb,$lr) {
+    @if $lr{
+        $tb:$tb;
+        $lr:$lr;
+    }@else{
+        $lr:0
+    }
+    margin:$tb $lr ;
+}
+
+.margin{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    @include margin(25px)
+}

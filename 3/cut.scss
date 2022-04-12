@@ -1,0 +1,99 @@
+@mixin mobile{
+    @media(max-width:375px){
+      @content;
+    }
+  }
+  
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+h1{
+    margin:auto;
+}
+.container{
+    width: 1024px;
+    height: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    @include mobile(){
+        width: 375px;
+        height: 752px;
+    }
+    .sidebar{
+        width: 200px;
+        height: 768px;
+        border: 1px black solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include mobile(){
+            display: none;
+            position: fixed;
+            z-index: 1300;
+            width: 375px;
+            height: 812px;
+            background: white;
+            padding-left: 150px;
+        }    
+        .fa-xmark{
+            display: none;
+            cursor: pointer;
+            @include mobile(){
+                position: fixed;
+                right: 25px;
+                display: block;
+            }
+        }
+      
+        h1{
+            margin: auto;
+        }
+    }
+    .header{
+        width: 824px;
+        height: 90px;
+        border: 1px black solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include mobile(){
+            width: 375px;
+        }
+        .fa-bars{  
+            display: none;
+            cursor: pointer;
+            @include mobile(){
+                display: block;
+                position: fixed;
+                right: 25px;
+            }
+        }
+    }
+    .body{
+        width: 824px;
+        height: 678px;
+        border: 1px black solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include mobile(){
+            width: 375px;
+            height: 662px;
+        }
+    }
+    .footer{
+        width: 1024px;
+        height: 125px;
+        border: 1px black solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include mobile(){
+            width: 375px;
+            height: 60px;
+        }
+    }
+}
