@@ -11,23 +11,42 @@
         top: 0;
         width: 100vw;
         height: 75px;
-        border: 1px black solid;
+        z-index: 1300;
         background-color: white;
+        padding: 10px;
+        .chatArea{
+            height: 50px;
+            position: relative;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            .headerPhoto{
+                position: absolute;
+                left: 5px;
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                background-color: #476bb3;
+                margin-right: 10px;
+            }
+            i{
+                color: #476bb3;
+                margin-right: 50px;
+            }
+        }
     }
     .stories{
-        width: 100vw;
-        height: 90px;
-        border: 1px black solid;
+        width: 90vw;
+        height: 65px;
         margin-top: 75px;
         padding-top: 5px;
+        padding-left: 5px;
         p{
             margin-left: 5px;
         }
         .photoArea{
-            margin: auto;
-            width: 90vw;
+            width: 95vw;
             height: 55px;
-            background-color: aqua;
             display: flex;
             justify-content: start;
             align-items: center;
@@ -35,25 +54,107 @@
             overflow-x: scroll;
             .photo{
                 margin: 5px;
-                width: 50px;
+                min-width: 50px;
                 height: 50px;
                 border-radius: 25px;
-                background-color: yellow;
+                background-color: #476bb3;
             }
         }
     }
     .post{
+        position: relative;
         width: 95vw;
-        height: 300px;
-        border: 1px black solid;
+        height: 290px;
+        border: 1px solid #e8ecf5;
         border-radius: 15px;
         margin: 20px auto;
-        &:nth-child(1){
-            background-color: aqua;
+        .postTop{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin: 7px;
+            .postPhoto{
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                background-color: #476bb3;
+            }
+            .postUser{
+                margin-left: 10px;
+            }
+            .fa-ellipsis{
+                position: absolute;
+                top:10px;
+                right: 15px;
+            }
+        }
+        .postContent{
+            margin: auto;
+            width: 90vw;
+            height: 140px;
+            // border: 1px black solid;
+            display: flex;
+            justify-content: start;
+            flex-wrap: wrap;
+            pre{
+                margin-top: 5px;
+                margin-left: 5px;
+                height: 70px;
+            }
+            .more{
+                margin-top: 10px;
+                span{
+                    cursor: pointer;
+                    color: gray;
+                }
+            }
+        }
+        .likeArea{
+            display: flex;
+            justify-content: space-between;
+            width: 90vw;
+            margin: auto;
+            .like{
+                position: relative;
+                width: 30px;
+                height: 30px;
+                border-radius: 15px;
+                background-color: #2a71ff;
+                padding-left: 9px;
+                padding-top: 4px;
+                span{
+                    position: absolute;
+                    margin: 0px;
+                    top: 5px;
+                    right: -15px;
+                    color: black;
+                }
+                i{
+                    font-size: 12px;
+                    color: white;
+                }
+            }
+            span{
+                margin-top: 5px;
+                margin-right: 10px;
+                color: #2a71ff;
+                font-weight: 700;
+            }
+        }
+        hr{
+            margin-top: 10px;
+            border: #e2ebff 1px solid;
+        }
+        .shareArea{
+            margin: 15px auto;
+            width: 70vw;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
         }
     }
     .space{
-        height: 70pxfr;
+        height: 70px;
     }
     
 }
@@ -62,7 +163,7 @@
     bottom: 0px;
     width: 100vw;
     height: 70px;
-    border: 1px black solid;
+    box-shadow: 2px 3px 8px rgba(0,0,0,.5);
     z-index: 1300;
     background-color: white;
 }
