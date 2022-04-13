@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Tamil&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-size: 14px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Anek Tamil', sans-serif;
 }
 
 .phone {
@@ -18,6 +21,15 @@
   z-index: 1300;
   background-color: white;
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .phone .header .chatArea {
@@ -49,35 +61,136 @@
   margin-right: 50px;
 }
 
+.phone .header .chatArea .point {
+  position: relative;
+}
+
+.phone .header .chatArea .point::before {
+  content: " ";
+  border: 5px red solid;
+  border-radius: 5px;
+  position: absolute;
+  left: 17px;
+}
+
+.phone .header .chatArea .fa-comment {
+  font-size: 1.5rem;
+}
+
+.phone .header .postSearchArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone .header .postSearchArea i {
+  color: #476bb3;
+}
+
+.phone .header .postSearchArea .newPost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 30px;
+  background-color: #476bb3;
+  border-radius: 15px;
+  color: white;
+  padding-left: 7px;
+  margin-right: 20px;
+}
+
+.phone .header .postSearchArea .newPost span {
+  font-size: 14px;
+}
+
+.phone .header .postSearchArea .newPost .postBtn {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 10px;
+}
+
+.phone .header .postSearchArea .newPost .postBtn i {
+  color: #2a71ff;
+  font-size: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4px;
+}
+
 .phone .stories {
-  width: 90vw;
-  height: 65px;
+  width: 100vw;
+  height: 120px;
   margin-top: 75px;
   padding-top: 5px;
   padding-left: 5px;
 }
 
-.phone .stories p {
-  margin-left: 5px;
+.phone .stories .storiesTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone .stories .storiesTitle span:first-child {
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.phone .stories .storiesTitle span:last-child {
+  color: #476bb3;
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+.phone .stories .storiesTitle i {
+  color: #476bb3;
+  font-size: 10px;
 }
 
 .phone .stories .photoArea {
   width: 95vw;
-  height: 55px;
+  height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 5px;
   overflow-y: hidden;
   overflow-x: scroll;
 }
 
 .phone .stories .photoArea .photo {
+  position: relative;
   margin: 5px;
   min-width: 50px;
   height: 50px;
@@ -85,10 +198,38 @@
   background-color: #476bb3;
 }
 
+.phone .stories .photoArea .photo .photo2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: wheat;
+  top: 35px;
+  right: 0;
+}
+
+.phone .stories .photoArea .photo i {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  color: white;
+}
+
+.phone .stories .photoArea .photo span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 55px;
+  font-size: 10px;
+}
+
 .phone .post {
   position: relative;
   width: 95vw;
-  height: 290px;
+  height: 300px;
   border: 1px solid #e8ecf5;
   border-radius: 15px;
   margin: 20px auto;
@@ -116,6 +257,22 @@
 
 .phone .post .postTop .postUser {
   margin-left: 10px;
+  margin-top: 5px;
+}
+
+.phone .post .postTop .postUser p {
+  font-weight: 600;
+}
+
+.phone .post .postTop .postUser span {
+  font-weight: 50;
+  color: #a5a3a3;
+}
+
+.phone .post .postTop .postUser span i {
+  cursor: pointer;
+  font-size: 10px;
+  color: #2a71ff;
 }
 
 .phone .post .postTop .fa-ellipsis {
@@ -141,11 +298,15 @@
 .phone .post .postContent pre {
   margin-top: 5px;
   margin-left: 5px;
-  height: 70px;
+  width: 87vw;
+  height: 75px;
+  white-space: pre-wrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .phone .post .postContent .more {
-  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .phone .post .postContent .more span {
@@ -165,6 +326,7 @@
 }
 
 .phone .post .likeArea .like {
+  margin-left: 5px;
   position: relative;
   width: 30px;
   height: 30px;
@@ -219,10 +381,54 @@
   position: fixed;
   bottom: 0px;
   width: 100vw;
-  height: 70px;
+  height: 60px;
   -webkit-box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
           box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
   z-index: 1300;
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer #under {
+  margin: 25px;
+}
+
+.footer .feed {
+  width: 90px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #476bb3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .feed i {
+  color: white;
+  margin-right: 10px;
+}
+
+.footer .feed span {
+  color: white;
+  font-size: 14px;
+}
+
+.footer i {
+  color: #476bb3;
+  font-size: large;
 }
 /*# sourceMappingURL=phone.css.map */
