@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="loginPart">
+        <div class="login">
+            <h1>Toggle password input</h1>
+            <div>
+                <input id="input" type="password" value="">
+                <button onmousedown="mouseDown()" onmouseup="mouseUp()" class="btn">
+                    <i id="eye" class="fa-solid fa-eye-low-vision"></i>
+                </button>
+            </div>
+            <span id="tips"></span>
+        </div>
+    </div>
+
+
+    <script>
+        let eye = document.getElementById('eye');
+        let input = document.getElementById('input')
+        let type = false;
+        document.getElementById('input').addEventListener('keyup', (e) => {
+            console.log(e.target.value);
+            var nowPsw = document.getElementById('input').value
+            var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[_.@$!%*?&])[a-zA-Z\d_.@$!%*?&]{8,}$/
+            if (regex.test(nowPsw)) {
+                // console.log("嘿嘿bingo答對了");
+                document.getElementById('tips').innerText = "嘿嘿bingo答對了"
+            }
+        })
+
+        const mouseDown = () => {
+            type = true;
+            if (type) {
+                eye.className = 'fa-solid fa-eye';
+                input.type = 'text'
+                console.log(document.getElementById('input').value);
+            } else {
+                eye.className = 'fa-solid fa-eye-low-vision';
+                input.type = 'password'
+                console.log(document.getElementById('input').value);
+            }
+        }
+
+        const mouseUp = () => {
+            type = false;
+            if (type) {
+                eye.className = 'fa-solid fa-eye';
+                input.type = 'text'
+                console.log(document.getElementById('input').value);
+            } else {
+                eye.className = 'fa-solid fa-eye-low-vision';
+                input.type = 'password'
+                console.log(document.getElementById('input').value);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

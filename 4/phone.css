@@ -285,24 +285,7 @@
   margin: auto;
   width: 90vw;
   height: 140px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.phone .post .postContent pre {
-  margin-top: 5px;
-  margin-left: 5px;
-  width: 87vw;
-  height: 75px;
-  white-space: pre-wrap;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  word-break: break-all;
 }
 
 .phone .post .postContent .more {

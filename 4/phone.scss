@@ -202,19 +202,20 @@
             margin: auto;
             width: 90vw;
             height: 140px;
+            word-break: break-all;
             // border: 1px black solid;
-            display: flex;
-            justify-content: start;
-            flex-wrap: wrap;
-            pre{
-                margin-top: 5px;
-                margin-left: 5px;
-                width: 87vw;
-                height: 75px;
-                white-space:pre-wrap;
-                overflow-x:scroll;
-                overflow-y:hidden;
-            }
+            // display: flex;
+            // justify-content: start;
+            // flex-wrap: wrap;
+            // pre{
+            //     margin-top: 5px;
+            //     margin-left: 5px;
+            //     width: 87vw;
+            //     height: 75px;
+            //     // white-space:pre-wrap;
+            //     // overflow-x:scroll;
+            //     // overflow-y:hidden;
+            // }
             .more{
                 margin-left: 10px;
                 span{

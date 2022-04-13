@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loginPart{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    .login{
+        position: relative;
+        width: 450px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        input{
+            width: 400px;
+            height: 30px;
+            padding-left: 10px; 
+            outline-style: auto;
+            &:focus{
+                outline-style: auto;
+                outline-color: #9cb1f0;
+            }
+        }
+        .btn{
+            position: absolute;
+            top:60px;
+            right: 30px;
+            border: none;
+            background-color: white;
+        }
+        i{
+            color: gray;
+        }
+    }
+}
