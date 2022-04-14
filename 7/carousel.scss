@@ -18,7 +18,6 @@
         height: 140px;
         flex-wrap: nowrap;
         overflow-x: hidden;
-
         input{
             display: none;
         }
@@ -112,14 +111,15 @@
      
         .laArea{
             position: absolute;
-            bottom: 6px;
+            bottom: 20px;
             text-align: center;
             width: 100%;
+            z-index: 1300;
             label{
                 display: inline-block;
                 width: 10px;
                 height: 10px;
-                background-color: antiquewhite;
+                background-color: rgb(196, 196, 196);
                 border-radius: 50%;
             }
         }
