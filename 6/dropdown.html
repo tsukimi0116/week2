@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="./dropdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="dropdown">
+        <label for="tab1"><span>一致性 Consistency</span> <i class="fa-solid fa-caret-right"></i></label>
+        <hr>
+        <div class="group">
+            <input onchange="clickFunc()" type="radio" name="tab" id="tab1">
+            <div class="content">
+                <span>邏輯上，一致性（consistency）、相容性、自洽性，是指一個形式系統中不蘊涵矛盾。
+
+                    所謂的矛盾有二種解讀方式：
+
+                    語義上：當一個命題S是由許多命題組成時，如果所有命題可同時為真，則S是一致的，否則S是不一致的。
+                    語法上：公理系統不能推導出兩個相反的結果。亦即不存在命題P，使得P→Q和P→~Q同時成立。</span>
+            </div>
+        </div>
+
+        <label for="tab2"><span>效率 Efficiency</span> <i class="fa-solid fa-caret-right"></i></label>
+        <hr>
+        <div class="group">
+            <input onchange="clickFunc()" type="radio" name="tab" id="tab2">
+            <div class="content">
+                <span>是指在適當的使用原料、能源、努力、金錢及時間的情形下，進行特定事務或產出預期成果的能力。以廣義的定義來說，效率是可以成功的把事情作好，且沒有浪費的能力[1][2][3][4][5]。「效率本身不是目的，效率不是我們想要的，但效率可以讓我們獲得更多有價值的事物。」[6]。在較數學或科學的用語中，效率是量測輸入用在預期任務或輸出的程度。一般會包括以最小的浪費、支出以及努力的情形下，用特定的努力來產出特定成果的能力[7]。</span>
+            </div>
+        </div>
+
+        <label for="tab3"><span>可控 Controllability</span> <i class="fa-solid fa-caret-right"></i>
+        </label>
+        <hr>
+        <div class="group">
+            <input onchange="clickFunc()" type="radio" name="tab" id="tab3">
+            <div class="content">
+                <span>可控制性（Controllability）是控制系統中的重要特性，在許多控制問題中都很重要，例如是否可以透過回授穩定一個本身不穩定的系統，或是最佳控制的相關問題。
+
+                    可控制性及可觀測性是同一個問題上的對偶概念。
+
+                    簡單來說，可控制性是指是否可以透過一些允許的程序讓系統調整到其組態空間內的任何一個組態。隨著其系統模型或是框架的不同，定義也會略有改變。
+
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const clickFunc = () => {
+            for (var idx = 0; idx <= 2; idx++) {
+                console.log(document.getElementsByTagName('input')[idx].checked, idx);
+                if (document.getElementsByTagName('input')[idx].checked == true) {
+                    document.getElementsByTagName('i')[idx].className = 'fa-solid fa-caret-down';
+                } else {
+                    document.getElementsByTagName('i')[idx].className = 'fa-solid fa-caret-right';
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

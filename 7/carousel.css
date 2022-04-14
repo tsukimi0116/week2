@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Area {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Area .boxArea {
+  position: relative;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  height: 140px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
+.Area .boxArea input {
+  display: none;
+}
+
+.Area .boxArea #carousel1:checked ~ .laArea :nth-child(1) {
+  background-color: #ebbc7f;
+}
+
+.Area .boxArea #carousel1:checked ~ #box1 {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.Area .boxArea #carousel1:checked ~ #box2 {
+  -webkit-transform: translateX(100%) perspective(400px) rotateY(-45deg);
+          transform: translateX(100%) perspective(400px) rotateY(-45deg);
+  background: -webkit-gradient(linear, right top, left top, from(antiquewhite), to(#cab496));
+  background: linear-gradient(to left, antiquewhite, #cab496);
+  -webkit-box-shadow: -2px 0px 5px gray;
+          box-shadow: -2px 0px 5px gray;
+}
+
+.Area .boxArea #carousel1:checked ~ #box3 {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 0;
+}
+
+.Area .boxArea #carousel1:checked ~ #box4 {
+  -webkit-transform: translateX(-300%) perspective(400px) rotateY(45deg);
+          transform: translateX(-300%) perspective(400px) rotateY(45deg);
+  background: -webkit-gradient(linear, left top, right top, from(antiquewhite), to(#cab496));
+  background: linear-gradient(to right, antiquewhite, #cab496);
+  -webkit-box-shadow: 2px 0px 5px gray;
+          box-shadow: 2px 0px 5px gray;
+}
+
+.Area .boxArea #carousel2:checked ~ .laArea :nth-child(2) {
+  background-color: #ebbc7f;
+}
+
+.Area .boxArea #carousel2:checked ~ #box1 {
+  -webkit-transform: perspective(400px) rotateY(45deg);
+          transform: perspective(400px) rotateY(45deg);
+  background: -webkit-gradient(linear, left top, right top, from(antiquewhite), to(#cab496));
+  background: linear-gradient(to right, antiquewhite, #cab496);
+  -webkit-box-shadow: 2px 0px 5px gray;
+          box-shadow: 2px 0px 5px gray;
+}
+
+.Area .boxArea #carousel2:checked ~ #box3 {
+  -webkit-transform: perspective(400px) rotateY(-45deg);
+          transform: perspective(400px) rotateY(-45deg);
+  background: -webkit-gradient(linear, right top, left top, from(antiquewhite), to(#cab496));
+  background: linear-gradient(to left, antiquewhite, #cab496);
+  -webkit-box-shadow: -2px 0px 5px gray;
+          box-shadow: -2px 0px 5px gray;
+}
+
+.Area .boxArea #carousel2:checked ~ #box4 {
+  opacity: 0;
+}
+
+.Area .boxArea #carousel3:checked ~ .laArea :nth-child(3) {
+  background-color: #ebbc7f;
+}
+
+.Area .boxArea #carousel3:checked ~ #box1 {
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+  opacity: 0;
+}
+
+.Area .boxArea #carousel3:checked ~ #box2 {
+  -webkit-transform: translateX(-100%) perspective(400px) rotateY(45deg);
+          transform: translateX(-100%) perspective(400px) rotateY(45deg);
+  background: -webkit-gradient(linear, left top, right top, from(antiquewhite), to(#cab496));
+  background: linear-gradient(to right, antiquewhite, #cab496);
+  -webkit-box-shadow: 2px 0px 5px gray;
+          box-shadow: 2px 0px 5px gray;
+}
+
+.Area .boxArea #carousel3:checked ~ #box3 {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.Area .boxArea #carousel3:checked ~ #box4 {
+  -webkit-transform: translateX(-100%) perspective(400px) rotateY(-45deg);
+          transform: translateX(-100%) perspective(400px) rotateY(-45deg);
+  background: -webkit-gradient(linear, right top, left top, from(antiquewhite), to(#cab496));
+  background: linear-gradient(to left, antiquewhite, #cab496);
+  -webkit-box-shadow: -2px 0px 5px gray;
+          box-shadow: -2px 0px 5px gray;
+}
+
+.Area .boxArea #carousel4:checked ~ .laArea :nth-child(4) {
+  background-color: #ebbc7f;
+}
+
+.Area .boxArea #carousel4:checked ~ #box1 {
+  -webkit-transform: translateX(200%) perspective(400px) rotateY(-45deg);
+          transform: translateX(200%) perspective(400px) rotateY(-45deg);
+  background: -webkit-gradient(linear, right top, left top, from(antiquewhite), to(#cab496));
+  background: linear-gradient(to left, antiquewhite, #cab496);
+  -webkit-box-shadow: -2px 0px 5px gray;
+          box-shadow: -2px 0px 5px gray;
+}
+
+.Area .boxArea #carousel4:checked ~ #box2 {
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+  opacity: 0;
+}
+
+.Area .boxArea #carousel4:checked ~ #box3 {
+  -webkit-transform: translateX(-200%) perspective(400px) rotateY(45deg);
+          transform: translateX(-200%) perspective(400px) rotateY(45deg);
+  background: -webkit-gradient(linear, left top, right top, from(antiquewhite), to(#cab496));
+  background: linear-gradient(to right, antiquewhite, #cab496);
+  -webkit-box-shadow: 2px 0px 5px gray;
+          box-shadow: 2px 0px 5px gray;
+}
+
+.Area .boxArea #carousel4:checked ~ #box4 {
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+}
+
+.Area .boxArea .laArea {
+  position: absolute;
+  bottom: 6px;
+  text-align: center;
+  width: 100%;
+}
+
+.Area .boxArea .laArea label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: antiquewhite;
+  border-radius: 50%;
+}
+
+.Area .boxArea .box {
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  min-width: 100px;
+  height: 100px;
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=carousel.css.map */

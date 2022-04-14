@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dropdown{
+    width: 600px;
+    border-top: none;
+    label{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 600px;
+        height: 40px;
+        span{
+            margin-left: 20px;
+        }
+        i{
+            margin-right: 20px;
+            color: rgb(173, 173, 173);
+            // transition: transform 0.5s;
+        }
+    }
+    input{
+        display: none;
+        &:checked + .content {
+            height: 170px;
+            padding: 20px;
+            border-bottom: 1px rgb(173, 173, 173) solid;
+        }
+    }
+    .group{
+        width: 600px;
+        .content{
+            height: 0;
+            overflow: hidden;
+            transition: .5s;
+        }
+    }
+}
