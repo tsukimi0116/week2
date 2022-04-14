@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./cut.css">
 </head>
 
 <body>
     <section class="container">
+        <input type="checkbox" name="sidebar" id="sidebarSwitch">
         <div id="sidebar" class="sidebar">
             <h1>sidebar</h1>
-            <i onclick="closeClick()" class="fa-solid fa-xmark"></i>
+            <label for="sidebarSwitch"><i class="fa-solid fa-xmark"></i></label>
         </div>
         <div>
             <div class="header">
                 <h1>header</h1>
-                <i onclick="topClick()" id="top" class="fa-solid fa-bars"></i>
+                <label for="sidebarSwitch"><i id="top" class="fa-solid fa-bars"></i></label>
             </div>
             <div class="body">
                 <h1>body</h1>
@@ -31,13 +32,13 @@
     </section>
 
     <script>
-        const topClick = () => {
-            document.getElementById('sidebar').style.display = 'block'
-        }
+        // const topClick = () => {
+        //     document.getElementById('sidebar').style.display = 'block'
+        // }
 
-        const closeClick = () => {
-            document.getElementById('sidebar').style.display = 'none'
-        }
+        // const closeClick = () => {
+        //     document.getElementById('sidebar').style.display = 'none'
+        // }
     </script>
 </body>
 

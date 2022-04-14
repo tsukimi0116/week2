@@ -38,6 +38,14 @@ h1 {
   }
 }
 
+.container input {
+  display: none;
+}
+
+.container input:checked + .sidebar {
+  display: block;
+}
+
 .container .sidebar {
   width: 15vw;
   height: 90vh;
@@ -146,6 +154,7 @@ h1 {
   .container .header .fa-bars {
     display: block;
     position: fixed;
+    top: 35px;
     right: 25px;
   }
 }

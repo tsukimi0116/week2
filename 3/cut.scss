@@ -34,6 +34,12 @@ h1{
         width: 375px;
         height: 752px;
     }
+    input{
+        display: none;
+        &:checked + .sidebar{
+            display: block;
+        }
+    }
     .sidebar{
         width: 15vw;
         height: 90vh;
@@ -91,12 +97,14 @@ h1{
         @include mobile(){
             width: 375px;
         }
+        
         .fa-bars{  
             display: none;
             cursor: pointer;
             @include mobile(){
                 display: block;
                 position: fixed;
+                top:35px;
                 right: 25px;
             }
         }
