@@ -3,6 +3,11 @@
       @content;
     }
   }
+@mixin w1024 {
+    @media(max-width:1024px){
+        @content;
+      }
+}
   
 *{
     margin: 0;
@@ -14,21 +19,37 @@ h1{
     margin:auto;
 }
 .container{
-    width: 1024px;
-    height: 768px;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    @include w1024(){
+        width: 1024px;
+        height: 768px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
     @include mobile(){
         width: 375px;
         height: 752px;
     }
     .sidebar{
-        width: 200px;
-        height: 768px;
+        width: 15vw;
+        height: 90vh;
         border: 1px black solid;
         display: flex;
         justify-content: center;
         align-items: center;
+        
+        @include w1024(){
+            width: 200px;
+            height: 768px;
+            border: 1px black solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         @include mobile(){
             display: none;
             position: fixed;
@@ -53,12 +74,20 @@ h1{
         }
     }
     .header{
-        width: 824px;
-        height: 90px;
+        width: 85vw;
+        height: 10vh;
         border: 1px black solid;
         display: flex;
         justify-content: center;
         align-items: center;
+        @include w1024(){
+            width: 824px;
+            height: 90px;
+            border: 1px black solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         @include mobile(){
             width: 375px;
         }
@@ -73,24 +102,41 @@ h1{
         }
     }
     .body{
-        width: 824px;
-        height: 678px;
+        width: 85vw;
+        height: 80vh;
         border: 1px black solid;
         display: flex;
         justify-content: center;
         align-items: center;
+        @include w1024(){
+            width: 824px;
+            height: 678px;
+            border: 1px black solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         @include mobile(){
             width: 375px;
             height: 662px;
         }
     }
     .footer{
-        width: 1024px;
+        min-width: 100vw;
         height: 125px;
         border: 1px black solid;
         display: flex;
         justify-content: center;
         align-items: center;
+        @include w1024(){
+            width: 1024px;
+            height: 125px;
+            border: 1px black solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
         @include mobile(){
             width: 375px;
             height: 60px;
