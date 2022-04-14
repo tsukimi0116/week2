@@ -20,7 +20,7 @@
                     <i id="eye" class="fa-solid fa-eye-low-vision"></i>
                 </button>
             </div>
-            <span id="tips"></span>
+            <span id="tips">請輸入密碼!規則:至少8碼，需含大小寫英文、數字、特殊符號各一個</span>
         </div>
     </div>
 
@@ -34,8 +34,14 @@
             var nowPsw = document.getElementById('input').value
             var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[_.@$!%*?&])[a-zA-Z\d_.@$!%*?&]{8,}$/
             if (regex.test(nowPsw)) {
-                // console.log("嘿嘿bingo答對了");
-                document.getElementById('tips').innerText = "嘿嘿bingo答對了"
+                document.getElementById('tips').innerText = "嘿嘿bingo答對了!"
+                document.getElementById('input').style.outlineColor = "#a6f09c";
+            } else if (document.getElementById('input').value == '') {
+                document.getElementById('tips').innerText = "請輸入密碼!規則:至少8碼，需含大小寫英文、數字、特殊符號各一個"
+            }
+            else {
+                document.getElementById('tips').innerText = "密碼複雜度不夠，加油好嗎?"
+                document.getElementById('input').style.outlineColor = "red";
             }
         })
 

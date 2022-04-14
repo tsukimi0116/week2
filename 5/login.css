@@ -35,6 +35,7 @@
 }
 
 .loginPart .login input {
+  margin-top: 16px;
   width: 400px;
   height: 30px;
   padding-left: 10px;
@@ -42,7 +43,6 @@
 }
 
 .loginPart .login input:focus {
-  outline-style: auto;
   outline-color: #9cb1f0;
 }
 
@@ -56,5 +56,10 @@
 
 .loginPart .login i {
   color: gray;
+}
+
+.loginPart .login span {
+  margin-top: 20px;
+  font-size: smaller;
 }
 /*# sourceMappingURL=login.css.map */
